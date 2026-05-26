@@ -3,6 +3,7 @@ import { Home } from "lucide-react";
 import ImageSlider from "@/components/ImageSlider/ImageSlider";
 import { WhatsApp } from "@/components/icons/whatsApp";
 import Image from "next/image";
+import Footer from "@/components/footer/footer";
 import {
   MapPin,
   Wifi,
@@ -185,12 +186,11 @@ export default function Beranda() {
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-muted-foreground">
               <span className="flex items-center gap-1.5">
                 <MapPin size={13} className="shrink-0" />
-                Jl. Contoh No. 12, Madiun, Jawa Timur 63131
+                Jl. Karyawati, Jiwan, Kec. Jiwan
               </span>
               <span className="text-border">·</span>
-              <span>5 menit dari Alun-Alun Madiun</span>
+              <span>5 menit dari Alun-Alun Kota Madiun</span>
               <span className="text-border">·</span>
-              <span>10 menit dari kampus</span>
             </div>
           </div>
 
@@ -243,6 +243,9 @@ export default function Beranda() {
           </div>
         </section>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }
